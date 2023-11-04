@@ -7,7 +7,7 @@
 
 *如果侵犯到原主题的版权的，我会删除的！*
 
-*以下README只对目录名进行了更改，其他都是[LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v3) 编写的*
+*以下README只对目录名和功能进行了更改，其他都是[LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v3) 编写的*
 
 ## 注意事项
 
@@ -26,7 +26,6 @@
 
 - 支持列表栏缩短到只保留头像
 - 支持连续聊天合并，隐藏连续头像，隐藏连续用户名
-- 私聊模式隐藏全部头像
 - 支持输入框打字机模式（光标稳定在一行内）
 - 支持自定义设置
 
