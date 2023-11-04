@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "type": "theme",
+    "name": "MomotalkNTQQ",
+    "slug": "momotalk_theme",
+    "description": "仿Momotalk NTQQ主题（基于festoney8/LiteLoaderQQNT-MomotalkNTQQ）",
+    "version": "0.6.6",
+    "thumbnail": "./image/icon.png",
+    "author": [
+        {
+            "name": "festoney8",
+            "link": "https://github.com/festoney8"
+        }
+    ],
+    "repository": {
+        "repo": "festoney8/LiteLoaderQQNT-MomotalkNTQQ",
+        "branch": "main"
+    },
+    "platform": [
+        "win32"
+    ],
+    "injects": {
+        "renderer": "./renderer.js",
+        "main": "./main.js",
+        "preload": "./preload.js"
+    }
+}
