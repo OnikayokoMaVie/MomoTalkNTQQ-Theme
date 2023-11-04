@@ -1,15 +1,26 @@
-# LiteLoaderQQNT-MomotalkNTQQ
+# MomotalkQQNTTheme
 
 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT)
-插件，基于 [test-theme](https://github.com/mo-jinran/test-theme) 编写，高仿 Telegram 风格的QQNT主题
+插件，基于 [LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v3) 编写，高仿 Momotalk 风格的QQNT主题
 
-## 介绍
+*这是一个低创主题，欢迎各位fork或者提交pr，私密马赛。*
+
+*如果侵犯到原主题的版权的，我会删除的！*
+
+*以下README只对目录名进行了更改，其他都是[LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v3) 编写的*
+
+## 注意事项
 
 - 本主题仅为个人使用的娱乐性质主题
 - **不要与其他主题同时启用，会造成样式混乱**
 - 推荐在 **QQ设置 - 默认字号** 下使用主题，以获得最佳体验
-- 测试环境：Win10 + QQNT9.9.0-14619 + LiteLoader0.3.1
-    - 已知 Linux 和 MacOS 下无法使用
+
+## 版本适配
+
+- 尝试适配到 QQNT 9.9.1-15717
+- 推荐使用 QQNT 9.9.1-15717
+- 测试环境：Win10 + QQNT 9.9.1-15717 + LiteLoader0.5.0
+- 已知 Linux 和 MacOS 下无法使用
 
 ## 功能
 
@@ -19,13 +30,6 @@
 - 支持输入框打字机模式（光标稳定在一行内）
 - 支持自定义设置
 
-## 截图
-
-![1.png](screenshots/1.png)
-![2.png](screenshots/2.png)
-![3.png](screenshots/3.png)
-![4.png](screenshots/4.png)
-
 ## 使用方法
 
 1. clone 或下载 zip 文件并解压
@@ -33,17 +37,14 @@
 
 ## 已知问题
 
-1. ~~新图片消息预载入时对话气泡大小突变~~ 已修复
+1. 若开启 QQ 后软件因载入卡顿 / 网络不畅等原因引起定时器超时，会出现主题不完全生效的情况，此时可重启 QQ 或在 devtools 内刷新页面解决
 2. 独立窗口模式编辑框不支持自动调高
-3. QQNT老版本（如13720）不支持列表栏缩短
-4. ~~查看聊天记录时因大图载入引起纵向跳变~~ 已修复
-5. ~~快速滚动聊天记录时不流畅~~ 基本修复，仅剩余少量卡顿
-6. Linux 系统下的 QQNT 因版本过低会出现诸多问题，无法正常使用
-7. 自定义设置页在不适配 dark 主题 (放弃适配 ~~又不是不能用~~)
+3. Linux 系统下的 QQNT 因版本过低会出现诸多问题，无法正常使用
+4. 自定义设置页在不适配 dark 主题 (放弃适配)
 
 ## 其他
 
-本插件会在 `LiteLoaderQQNT数据目录/plugins_data/telegram_theme` 路径下自动创建 `setting.json` 文件作为默认设定，修改这一文件可以实时反馈效果到QQ
+本插件会在 `LiteLoaderQQNT数据目录/plugins_data/momotalk_theme` 路径下自动创建 `setting.json` 文件作为默认设定，修改这一文件可以实时反馈效果到QQ
 
 `setting.json` 下有两组设置，分别对应 light 主题和 dark 主题，互不干扰
 
