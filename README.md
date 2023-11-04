@@ -1,7 +1,7 @@
 # MomotalkQQNTTheme
 
 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT)
-插件，基于 [LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v3) 编写，高仿 Momotalk 风格的QQNT主题
+插件，基于 [LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v3) 编写，低仿 Momotalk 风格的QQNT主题
 
 *这是一个低创主题，欢迎各位fork或者提交pr，私密马赛。*
 
