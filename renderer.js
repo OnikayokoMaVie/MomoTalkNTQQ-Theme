@@ -1,6 +1,6 @@
 function log(...args) {
     const nowTime = new Date().toLocaleTimeString();
-    const newArgs = [`[MomotalkNTQQ] ${nowTime}:`, ...args];
+    const newArgs = [`[QQNT Momotalk Theme] ${nowTime}:`, ...args];
     console.log.apply(console, newArgs);
 }
 
@@ -79,7 +79,7 @@ async function getSetting() {
     try {
         return await momotalk_theme.getSetting();
     } catch (error) {
-        alert("MomotalkNTQQ 获取设置失败");
+        alert("Momotalk-Theme 获取设置失败");
         return null;
     }
 }
@@ -96,7 +96,7 @@ async function resetSetting() {
 async function updateWallpaper() {
     momotalk_theme.updateWallpaper((event, imgPath) => {
         const root = document.documentElement;
-        root.style.setProperty("--chatarea-wallpaper", `url("file://${imgPath}")`);
+        root.style.setProperty("--chatarea-wallpaper", `url("appimg://${imgPath}")`);
     });
 }
 
@@ -435,14 +435,14 @@ async function onConfigView(view) {
     const css = document.createElement("link");
     css.rel = "stylesheet";
     // 控制bulma css的作用范围
-    css.href = `file://${pluginPath}/setting_src/telegram.css`;
+    css.href = `llqqnt://local-file/${pluginPath}/setting_src/momotalk.css`;
     document.head.appendChild(css);
 
     const parser = new DOMParser();
 
     // 章节创建, 外部wrapper
     async function createSection() {
-        const componentPath = `file://${pluginPath}/setting_src/section.html`;
+        const componentPath = `llqqnt://local-file/${pluginPath}/setting_src/section.html`;
         let componentHTML = await (await fetch(componentPath)).text();
         const doc = parser.parseFromString(componentHTML, "text/html");
         return doc.querySelector("section");
@@ -450,7 +450,7 @@ async function onConfigView(view) {
 
     // 组件创建器, 根据组件类型创建每行设置
     async function createComponent(component, id, title, description, value) {
-        const componentPath = `file://${pluginPath}/setting_src/${component}.html`;
+        const componentPath = `llqqnt://local-file/${pluginPath}/setting_src/${component}.html`;
         let c = await (await fetch(componentPath)).text();
         c = c.replace(/id-placeholder/g, id);
         c = c.replace(/title-placeholder/g, title);
@@ -472,17 +472,17 @@ async function onConfigView(view) {
     let sectionEle = view.querySelector("section");
 
     // 特例, 单独添加reset
-    const componentPath = `file://${pluginPath}/setting_src/reset.html`;
+    const componentPath = `llqqnt://local-file/${pluginPath}/setting_src/reset.html`;
     let c = await (await fetch(componentPath)).text();
     const doc = parser.parseFromString(c, "text/html");
     const ele = doc.querySelector(".box");
     sectionEle.appendChild(ele);
     const resetButton = view.querySelector("#reset button");
     resetButton.addEventListener("click", function () {
-        const result = confirm('[MomotalkNTQQ] 是否恢复全部设置至默认？');
+        const result = confirm('[Momotalk-Theme] 是否恢复全部设置至默认？');
         if (result) {
             resetSetting();
-            alert('[MomotalkNTQQ] 已重置全部设置, 请重新进入QQ设置页');
+            alert('[Momotalk-Theme] 已重置全部设置, 请重新进入QQ设置页');
         } else {
             alert('操作已取消');
         }
@@ -502,7 +502,7 @@ async function onConfigView(view) {
     try {
         setting = await getSetting();
     } catch (error) {
-        throw new Error('MomotalkNTQQ取设置失败');
+        throw new Error('Momotalk-Theme 获取设置失败');
     }
 
     let sectionImportant = [];

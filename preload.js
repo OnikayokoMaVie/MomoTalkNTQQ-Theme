@@ -1,4 +1,4 @@
-const {contextBridge, BrowserWindow, ipcRenderer} = require("electron");
+const {contextBridge, ipcRenderer} = require("electron");
 
 
 contextBridge.exposeInMainWorld("momotalk_theme", {
@@ -29,6 +29,5 @@ contextBridge.exposeInMainWorld("momotalk_theme", {
     ),
     resetSetting: () => ipcRenderer.send(
         "LiteLoaderQQNT.momotalk_theme.resetSetting",
-    ),    
-}
-);
+    ),
+});

@@ -1,19 +1,19 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "type": "theme",
-    "name": "MomotalkNTQQ",
+    "name": "仿Momotalk主题",
     "slug": "momotalk_theme",
-    "description": "仿Momotalk NTQQ主题（基于festoney8/LiteLoaderQQNT-MomotalkNTQQ）",
+    "description": "基于LiteLoaderQQNT-Telegram-Theme修改的低仿Momotalk的QQNT主题",
     "version": "0.6.6",
     "thumbnail": "./image/icon.png",
     "author": [
         {
-            "name": "festoney8",
-            "link": "https://github.com/festoney8"
+            "name": "MiyakoDevelopTeam",
+            "link": "https://github.com/MiyakoDevelopTeam"
         }
     ],
     "repository": {
-        "repo": "festoney8/LiteLoaderQQNT-MomotalkNTQQ",
+        "repo": "MiyakoDevelopTeam/MomoTalkNTQQ-Theme",
         "branch": "main"
     },
     "platform": [

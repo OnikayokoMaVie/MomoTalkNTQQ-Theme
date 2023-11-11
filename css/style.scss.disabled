@@ -433,19 +433,6 @@
                         grid-template-columns: auto auto auto minmax(20%, 1fr) !important;
 
 
-                        & .avatar-span {
-                            &:has(+ :not(.user-name)) {
-                                display: none !important;
-                            }
-
-                            // 强制覆盖大小
-                            #app & .message-container__avatar {
-                                width: 40px !important;
-                                height: 40px !important;
-                            }
-
-                        }
-
                         // 用户名
                         & .user-name {
                             color: var(--chatarea-username-color) !important;
@@ -542,16 +529,16 @@
                                 &:has(.text-element):not(:has(.pic-element)),
                                 &:has(.face-element),
                                 &:is(.ptt-message) {
-                                    padding: 8px !important;
+                                    padding: 8px 16px 8px 16px !important;
                                     // 右下角小角度
-                                    border-radius: 10px;
+                                    border-radius: 20px 20px 8px 20px;
                                 }
 
                                 // 图文混合气泡, 图图混合气泡
                                 &:has(.pic-element:nth-child(n+2)),
                                 &:has(.text-element):has(.pic-element) {
                                     padding: 0 !important;
-                                    border-radius: 10px;
+                                    border-radius: 20px 20px 8px 20px;
 
                                     & .text-element {
                                         display: inline-block;

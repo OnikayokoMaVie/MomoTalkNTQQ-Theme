@@ -9,11 +9,10 @@ let cssPath = path.join(__dirname, "css", "style.css");
 
 
 // function output(...args) {
-//     console.log("\x1b[32m%s\x1b[0m", "TelegramTheme:", ...args);
+//     console.log("\x1b[32m%s\x1b[0m", "MomotalkNTQQTheme:", ...args);
 // }
 
 // 防抖函数
-
 function debounce(fn, time = 100) {
     let timer = null;
     return function (...args) {
@@ -58,7 +57,7 @@ function initSetting(overwrite = false) {
             });
         }
     } catch (error) {
-        // output('[MomotalkNTQQ]创建setting.json配置文件失败!');
+        // output('[MomotalkNTQQ Theme]创建setting.json配置文件失败!');
     }
 }
 
@@ -70,7 +69,7 @@ function updateWallpaper(webContents) {
     try {
         webContents.send("LiteLoaderQQNT.momotalk_theme.updateWallpaper", normalPath);
     } catch (err) {
-        // output('[MomotalkNTQQ 获取背景图片失败]');
+        // output('[MomotalkNTQQ Theme 获取背景图片失败]');
         // output(err);
     }
 }
@@ -140,7 +139,7 @@ function setWallpaper() {
         let filePath = result.filePaths[0];
         filePath = filePath.replace(/\\/g, "/");
         // 调用setSetting
-        setSetting({"key": "--chatarea-wallpaper", "value": `url("file://${filePath}")`})
+        setSetting({"key": "--chatarea-wallpaper", "value": `url("appimg://${filePath}")`})
     }).catch(err => {
         // output("setWallpaper, error", err)
     });
@@ -213,6 +212,7 @@ function onBrowserWindowCreated(window, plugin) {
         settingPath = path.join(plugin.path.data, 'setting.json');
     }
     initSetting();
+
     window.on("ready-to-show", () => {
         const url = window.webContents.getURL();
         if (url.includes("app://./renderer/index.html")) {
