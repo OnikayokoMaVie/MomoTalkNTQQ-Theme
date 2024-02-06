@@ -1,58 +1,65 @@
-# MomotalkQQNTTheme
-# ⚠现LiteLoaderQQNT无法使用！！！会按照 [LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v4) 的v4版本进行修改更新。
+# MomoTalkNTQQ-Theme
 
-[LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 插件，基于 [LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v3) 低质量修改，低仿 Momotalk 风格的QQNT主题
+![1](screenshot/1.png)
 
-*这是一个低创主题，欢迎各位fork或者提交pr，谢谢你。*
+[LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 插件，基于 [LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v4) 低质量修改，低仿 Momotalk 风格的QQNT主题
 
-*dark主题不适配，因为momotalk没有dark主题。*
+这是一个低创主题，欢迎各位fork或者提交pr，谢谢你。
 
-*如果侵犯到原主题的版权的，我会删除的！*
+dark主题不适配，因为momotalk没有dark主题。
 
-*以下README只对目录名和功能进行了更改，其他都是[LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v3) 编写的*
+如果侵犯到原主题的版权的，我会删除的！
 
-## 注意事项
+↓以下README只对目录名和功能进行了更改，其他都是[LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v4) 编写的↓
 
-- 本主题仅为个人使用的娱乐性质主题
-- **不要与其他主题同时启用，会造成样式混乱**
-- 推荐在 **QQ设置 - 默认字号** 下使用主题，以获得最佳体验
+
+## 介绍
+
+-   低仿 Momotalk
+-   支持自定义壁纸
+-   支持日间模式、夜间模式
+-   Momotalk 风格气泡 (没有小尖尖)
+-   支持连续消息合并
+-   支持自定义主题样式，提供大量设置项
 
 ## 版本适配
 
-- 尝试适配到 QQNT 9.9.1-15717
-- 推荐使用 QQNT 9.9.1-15717
-- 测试环境：Win10 + QQNT 9.9.1-15717 + LiteLoader0.5.0
-- 已知 Linux 和 MacOS 下无法使用
+-   仅适配 **LiteLoaderQQNT 1.0.0** 及以上版本
 
-## 功能
+## ⚠已知问题⚠
 
-- 支持列表栏缩短到只保留头像
-- 支持连续聊天合并，隐藏连续头像，隐藏连续用户名
-- 支持输入框打字机模式（光标稳定在一行内）
-- 支持自定义设置
+1. 私聊头像无法显示（实际上是不会改）
+
+![bug1](screenshot/bug_1.png)
+
+2. 会话选择框其中的文字颜色只能是白色（还是不会改qwq）
+
+![bug2](screenshot/bug_2.png)
+
+应该还有更多吧……
 
 ## 使用方法
 
-1. clone 或下载 zip 文件并解压
-2. 将文件夹移动至 `LiteLoaderQQNT数据目录/plugins/` 下面，重启 QQNT 即可
+1.  从 [Release](https://github.com/MiyakoLol/MomoTalkNTQQ-Theme/releases) 下载 zip 压缩包（或直接 clone 项目）
 
-## 已知问题
+2.  将主题文件解压到 LiteLoaderQQNT 数据目录的 `plugins` 文件夹下
 
-1. 若开启 QQ 后软件因载入卡顿 / 网络不畅等原因引起定时器超时，会出现主题不完全生效的情况，此时可重启 QQ 或在 devtools 内刷新页面解决
-2. 独立窗口模式编辑框不支持自动调高
-3. Linux 系统下的 QQNT 因版本过低会出现诸多问题，无法正常使用
-4. 自定义设置页在不适配 dark 主题 (放弃适配)
+3.  重启 QQ
+
+> [!CAUTION]
+>
+> -   **注意：切换 日间/夜间模式 时，主题会自动适配，但设置页不会更新。需重新打开设置页，再修改主题设置**
+> -   **Momotalk 没有夜间主题！请不要切换成夜间模式！（↑为原作者制作的作品问题）**
+
+## 兼容性
+
+-   **请不要与其他 LiteLoader 主题同时使用**
+
+-   **本主题自带「头像置底、头像浮动、连续消息合并」，若同时使用 [轻量工具箱](https://github.com/xiyuesaves/LiteLoaderQQNT-lite_tools)，请关闭工具箱的这三项功能**
+
+-   本主题自带「自定义壁纸」功能，不必与其他插件的自定义壁纸同时启用
 
 ## 其他
 
-本插件会在 `LiteLoaderQQNT数据目录/plugins_data/momotalk_theme` 路径下自动创建 `setting.json` 文件作为默认设定，修改这一文件可以实时反馈效果到QQ
-
-`setting.json` 下有两组设置，分别对应 light 主题和 dark 主题，互不干扰
-
-现已支持在设置页面调节主题，无需再编辑文本文件
-
-主题文件夹下的 `setting.json.example` 文件内容是初始设置，可供备用
-
-## 协议及免责
-
-MIT | 禁止用于任何非法用途，插件开发属个人学习与研究，未提供给任何第三方使用。任何不当使用导致的任何侵权问题责任自负。
+-   本项目纯娱乐用途，仅供学习交流，请勿在微信、QQ、B 站之类的平台传播
+-   没学过 Electron，代码菜，能跑就行，能跑的代码都是 GPT 写的，bug 都是我写的（

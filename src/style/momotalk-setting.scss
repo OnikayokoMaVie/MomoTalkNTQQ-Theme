@@ -1,0 +1,203 @@
+@media (prefers-color-scheme: light) {
+    .tab-view.momotalk_theme {
+        color: black;
+    }
+    setting-list {
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+    setting-item {
+        background-color: white;
+    }
+    input[type="text"] {
+        color: black;
+    }
+    button {
+        color: black;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .tab-view.momotalk_theme {
+        color: white;
+    }
+    setting-list {
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #262626;
+        margin-bottom: 20px;
+    }
+    setting-item {
+        background-color: #262626;
+    }
+    input[type="text"] {
+        color: white;
+    }
+    button {
+        color: white;
+    }
+}
+
+.tab-view.momotalk_theme {
+    // 颜色选择器
+    & .momotalk-color-picker {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        & .col-info {
+            margin-right: auto;
+            & .info-title {
+                font-size: 1.1em;
+                margin-bottom: 3px;
+            }
+            & .info-description {
+                font-size: 0.95em;
+                color: gray;
+            }
+        }
+        & .col-color {
+            overflow: hidden;
+            & input[type="color"] {
+                width: 120px;
+                height: 26px;
+                padding: 0;
+                margin: 0;
+                border: 1px #bbb solid;
+                border-radius: 4px;
+                overflow: hidden;
+                appearance: none;
+                cursor: pointer;
+                // https://stackoverflow.com/questions/11167281
+                -webkit-appearance: none;
+                &::-webkit-color-swatch {
+                    border: none;
+                }
+                &::-webkit-color-swatch-wrapper {
+                    padding: 0;
+                }
+            }
+        }
+        & .col-opacity {
+            --opacity-0: #00000000;
+            --opacity-100: #000000ff;
+            margin-left: 12px;
+            input[type="range"] {
+                width: 120px;
+                height: 26px;
+                overflow: hidden;
+                cursor: pointer;
+                border-radius: 4px;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
+                border: 1px #bbb solid;
+                // https://stackoverflow.com/questions/34850327
+                &::-webkit-slider-runnable-track {
+                    height: 26px;
+                    background: linear-gradient(90deg, var(--opacity-0), var(--opacity-100));
+                    -webkit-appearance: none;
+                }
+                &::-webkit-slider-thumb {
+                    position: relative;
+                    height: 26px;
+                    width: 0;
+                    background: transparent;
+                    border-left: 2px black solid;
+                    border-right: 2px white solid;
+                    border-top: none;
+                    border-bottom: none;
+                    -webkit-appearance: none;
+                }
+            }
+        }
+        & .col-reset {
+            margin-left: 12px;
+            & button {
+                width: 40px;
+                height: 26px;
+                border-radius: 4px;
+                padding: 0;
+                border: 1px gray solid;
+                background: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // 数值输入
+    & .momotalk-text-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        & .col-info {
+            margin-right: auto;
+            & .info-title {
+                font-size: 1.1em;
+                margin-bottom: 3px;
+            }
+            & .info-description {
+                font-size: 0.95em;
+                color: gray;
+            }
+        }
+        & .col-text {
+            input[type="text"] {
+                width: 120px;
+                height: 26px;
+                font-size: 1.1em;
+                overflow: hidden;
+                cursor: text;
+                border-radius: 4px;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                border: 1px gray solid;
+                padding-left: 6px;
+            }
+        }
+        & .col-reset {
+            margin-left: 12px;
+            & button {
+                width: 40px;
+                height: 26px;
+                border-radius: 4px;
+                padding: 0;
+                border: 1px gray solid;
+                background: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // 按钮
+    & .momotalk-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        & .col-info {
+            margin-right: auto;
+            & .info-title {
+                font-size: 1.1em;
+                margin-bottom: 3px;
+            }
+            & .info-description {
+                font-size: 0.95em;
+                color: gray;
+            }
+        }
+        & .col-button {
+            & button {
+                height: 26px;
+                border-radius: 4px;
+                padding: 0 4px;
+                border: 1px gray solid;
+                background: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,27 +1,29 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 4,
     "type": "theme",
-    "name": "仿Momotalk主题",
+    "name": "MomotalkNTQQ 主题",
     "slug": "momotalk_theme",
-    "description": "基于LiteLoaderQQNT-Telegram-Theme修改的低仿Momotalk的QQNT主题",
-    "version": "0.6.6",
-    "thumbnail": "./image/icon.png",
-    "author": [
+    "description": "低仿 MomotalkNTQQ 风格的 QQNT 主题",
+    "version": "4.0.0",
+    "icon": null,
+    "authors": [
         {
-            "name": "MiyakoDevelopTeam",
-            "link": "https://github.com/MiyakoDevelopTeam"
+            "name": "MiyakoLol",
+            "link": "https://github.com/MiyakoLol"
         }
     ],
-    "repository": {
-        "repo": "MiyakoDevelopTeam/MomoTalkNTQQ-Theme",
-        "branch": "main"
-    },
-    "platform": [
-        "win32"
-    ],
+    "platform": ["win32", "linux", "darwin"],
     "injects": {
-        "renderer": "./renderer.js",
-        "main": "./main.js",
-        "preload": "./preload.js"
+        "renderer": "./src/renderer.js",
+        "main": "./src/main.js",
+        "preload": "./src/preload.js"
+    },
+    "repository": {
+        "repo": "MiyakoLol/MomoTalkNTQQ-Theme",
+        "branch": "v4",
+        "release": {
+            "tag": "latest",
+            "file": "MomoTalkNTQQ-Theme.zip"
+        }
     }
 }
