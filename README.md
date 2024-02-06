@@ -4,6 +4,12 @@
 
 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 插件，基于 [LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v4) 低质量修改，低仿 Momotalk 风格的QQNT主题
 
+
+> [!CAUTION]
+>
+> -   **因为此项目基于LiteLoaderQQNT-Telegram-Theme修改而成，你也不应该在微信、QQ、B 站之类的平台传播此项目。**
+> -   **本项目纯娱乐用途，仅供学习交流，请勿在微信、QQ、B 站之类的平台传播**
+
 这是一个低创主题，欢迎各位fork或者提交pr，谢谢你。
 
 dark主题不适配，因为momotalk没有dark主题。
@@ -60,6 +66,8 @@ dark主题不适配，因为momotalk没有dark主题。
 -   本主题自带「自定义壁纸」功能，不必与其他插件的自定义壁纸同时启用
 
 ## 其他
+
+*因为此项目基于[LiteLoaderQQNT-Telegram-Theme](https://github.com/festoney8/LiteLoaderQQNT-Telegram-Theme/tree/v4)修改而成，你也不应该在微信、QQ、B 站之类的平台传播此项目。*
 
 -   本项目纯娱乐用途，仅供学习交流，请勿在微信、QQ、B 站之类的平台传播
 -   没学过 Electron，代码菜，能跑就行，能跑的代码都是 GPT 写的，bug 都是我写的（
