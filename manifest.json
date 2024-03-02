@@ -4,8 +4,8 @@
     "name": "MomotalkNTQQ 主题",
     "slug": "momotalk_theme",
     "description": "低仿 MomotalkNTQQ 风格的 QQNT 主题 （基于Telegram-Theme修改而成）",
-    "version": "4.0.0",
-    "icon": null,
+    "version": "4.0.1",
+    "icon": "./icon.png",
     "authors": [
         {
             "name": "MiyakoLol",
