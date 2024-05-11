@@ -26,7 +26,7 @@
         },
         "--momotalk-message-others-username-font-color": {
             "value": "#000000ff",
-            "defaultValue": "#ffffff",
+            "defaultValue": "#000000ff",
             "title": "他人的 昵称颜色",
             "description": "",
             "type": "color",
@@ -42,7 +42,7 @@
         },
         "--momotalk-message-others-bg-color": {
             "value": "#4c5b70ff",
-            "defaultValue": "#ffffff",
+            "defaultValue": "#4c5b70ff",
             "title": "他人的 气泡颜色",
             "description": "",
             "type": "color",
@@ -50,7 +50,7 @@
         },
         "--momotalk-message-others-font-color": {
             "value": "#ffffffff",
-            "defaultValue": "#000000",
+            "defaultValue": "#ffffffff",
             "title": "他人的 文字颜色",
             "description": "",
             "type": "color",
@@ -66,7 +66,7 @@
         },
         "--momotalk-message-others-highlight-color": {
             "value": "#ffc0cbff",
-            "defaultValue": "#5fbe67",
+            "defaultValue": "#ffc0cbff",
             "title": "他人的 高亮色",
             "description": "在@用户/回复/语音消息时使用",
             "type": "color",
@@ -82,7 +82,7 @@
         },
         "--momotalk-message-others-reply-content-font-color": {
             "value": "#ffffffff",
-            "defaultValue": "#808080",
+            "defaultValue": "#ffffffff",
             "title": "回复消息文字颜色",
             "description": "",
             "type": "color",
@@ -106,7 +106,7 @@
         },
         "--momotalk-message-self-bg-color": {
             "value": "#4a8acaff",
-            "defaultValue": "#effdde",
+            "defaultValue": "#4a8acaff",
             "title": "自己的 气泡颜色",
             "description": "",
             "type": "color",
@@ -114,7 +114,7 @@
         },
         "--momotalk-message-self-font-color": {
             "value": "#ffffffff",
-            "defaultValue": "#000000",
+            "defaultValue": "#ffffffff",
             "title": "自己的 文字颜色",
             "description": "",
             "type": "color",
@@ -130,7 +130,7 @@
         },
         "--momotalk-message-self-highlight-color": {
             "value": "#ffffffff",
-            "defaultValue": "#5fbe67",
+            "defaultValue": "#ffffffff",
             "title": "自己的 高亮色",
             "description": "在@用户/回复/语音消息时使用",
             "type": "color",
@@ -138,7 +138,7 @@
         },
         "--momotalk-message-self-url-color": {
             "value": "#ffffffff",
-            "defaultValue": "#168ad0",
+            "defaultValue": "#ffffffff",
             "title": "自己的 消息中的网址颜色",
             "description": "",
             "type": "color",
@@ -146,7 +146,7 @@
         },
         "--momotalk-message-self-reply-content-font-color": {
             "value": "#ffffffff",
-            "defaultValue": "#808080",
+            "defaultValue": "#ffffffff",
             "title": "回复消息文字颜色",
             "description": "",
             "type": "color",
@@ -186,7 +186,7 @@
         },
         "--momotalk-panel-header-bg-color": {
             "value": "#fb91a4ff",
-            "defaultValue": "#ffffff",
+            "defaultValue": "#fb91a4ff",
             "title": "聊天栏顶部 背景色",
             "description": "",
             "type": "color",
@@ -194,7 +194,7 @@
         },
         "--momotalk-panel-header-title-color": {
             "value": "#ffffffff",
-            "defaultValue": "#000000",
+            "defaultValue": "#ffffffff",
             "title": "聊天栏顶部 群名用户名 文字色",
             "description": "",
             "type": "color",
@@ -202,7 +202,7 @@
         },
         "--momotalk-contact-top-bar-bg-color": {
             "value": "#fb91a4ff",
-            "defaultValue": "#ffffff",
+            "defaultValue": "#fb91a4ff",
             "title": "顶部背景色",
             "description": "",
             "type": "color",
@@ -218,7 +218,7 @@
         },
         "--momotalk-contact-list-item-bg-color": {
             "value": "#f2f8f8ff",
-            "defaultValue": "#ffffff",
+            "defaultValue": "#f2f8f8ff",
             "title": "普通会话项背景色",
             "description": "",
             "type": "color",
@@ -226,7 +226,7 @@
         },
         "--momotalk-contact-list-item-top-bg-color": {
             "value": "#f2f8f8ff",
-            "defaultValue": "#ffffff",
+            "defaultValue": "#f2f8f8ff",
             "title": "置顶会话项背景色",
             "description": "",
             "type": "color",
@@ -234,7 +234,7 @@
         },
         "--momotalk-contact-list-item-hover-bg-color": {
             "value": "#f1f1f1ff",
-            "defaultValue": "#f1f1f1",
+            "defaultValue": "#f1f1f1ff",
             "title": "鼠标经过会话项时背景色",
             "description": "",
             "type": "color",
@@ -242,7 +242,7 @@
         },
         "--momotalk-contact-list-item-selected-bg-color": {
             "value": "#dae5e7ff",
-            "defaultValue": "#419fd9",
+            "defaultValue": "#dae5e7ff",
             "title": "会话项 选中时 背景色",
             "description": "",
             "type": "color",
@@ -250,7 +250,7 @@
         },
         "--momotalk-contact-list-item-selected-title-font-color": {
             "value": "#ffffffff",
-            "defaultValue": "#ffffff",
+            "defaultValue": "#ffffffff",
             "title": "会话项 选中时 标题文字颜色",
             "description": "",
             "type": "color",
@@ -258,7 +258,7 @@
         },
         "--momotalk-contact-list-item-selected-summary-font-color": {
             "value": "#ffffffff",
-            "defaultValue": "#ffffff",
+            "defaultValue": "#ffffffff",
             "title": "会话项 选中时 摘要文字颜色",
             "description": "",
             "type": "color",
@@ -306,7 +306,7 @@
         },
         "--momotalk-sidebar-bg-color": {
             "value": "#4d5c6fff",
-            "defaultValue": "#293a4c",
+            "defaultValue": "#4d5c6fff",
             "title": "侧边栏 背景色",
             "description": "",
             "type": "color",
@@ -330,7 +330,7 @@
         },
         "--momotalk-sidebar-nav-item-selected-bg-color": {
             "value": "#ffffffff",
-            "defaultValue": "#17212b",
+            "defaultValue": "#ffffffff",
             "title": "侧边栏 按钮选中时 背景色",
             "description": "",
             "type": "color",
@@ -346,7 +346,7 @@
         },
         "--momotalk-sidebar-nav-item-unselected-icon-color": {
             "value": "#ffffffff",
-            "defaultValue": "#8393a3",
+            "defaultValue": "#ffffffff",
             "title": "侧边栏 按钮未选中时 图标色",
             "description": "",
             "type": "color",
